@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/fonts.css" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.6.0.min.css"/>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>JEE Archive</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="files.html">Files</a></li>
+                <li><a href="legal.html">Legal Issues</a></li>
+            </ul>
+        </nav>
+        <body>
+            <section>
+               <article>
+                <input id="searchbar" onkeyup="search_blog()" type="text"
+		name="search" placeholder="Search "></h2> <br><br> 
+        <script>
+            // JavaScript code
+function search_blog() {
+	let input = document.getElementById('searchbar').value
+	input=input.toLowerCase();
+	let x = document.getElementsByClassName('jeematerial');
+	
+	for (i = 0; i < x.length; i++) {
+		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+			x[i].style.display="none";
+		}
+		else {
+			x[i].style.display="list-item";				
+		}
+	}
+}
+        </script>
+        <ul id='list'>
+            <h3><a href="files/allen.html" ><li class="jeematerial">Allen Module</li></h3> </a> 
+            <h3><a href="files/xyz.html" ><li class="jeematerial">Dog</li></a></h3>
+        <h2><li class="jeematerial">Animalator</li></h2>
+        <h2><li class="jeematerial">Fish</li></h2>
+            <h2><li class="jeematerial">Gorilla</li></h2>
+        <h2><li class="jeematerial">Monkey</li></h2>
+        <h2>	<li class="jeematerial">Turtle</li></h2>
+        <h2>	<li class="jeematerial">Whale</li></h2>
+        <h2>	<li class="jeematerial">Aligator</li></h2>
+        <h2>	<li class="jeematerial">Donkey</li></h2>
+        <h2>	<li class="jeematerial">Horse</li></h2>
+        </ul>
+                </article>
+        </section>
+    </body>
