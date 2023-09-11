@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.6.0.min.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEE Archive</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../documentation.html">Documentation</a></li>
+            <li><a href="../files.html">Files</a></li>
+            <li><a href="../legal.html">Legal Issues</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h2>.onion Link</h2>
+            <p id="p1"><code>dxh72w7encjsnu282828jsnSDujw8hf.onion</code></p>
+            <button onclick="copyToClipboard('#p1')">Copy</button>
+            <br>
+            <h2>Private Key</h2>
+           <p id="p2"><code>stfu1SwDw92Ndw02nbv</code></p>
+            <button onclick="copyToClipboard('#p2')">Copy</button>
+            <script>
+                function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+            </script>
+ </article>
+ </section>
+
+ </body>
+ </html>
