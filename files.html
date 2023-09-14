@@ -12,20 +12,44 @@
 <body>
     <nav uk-dropnav>
         <ul class="uk-subnav">
-            <li><a href="/">Home</a></li>
-            <li><a href="./documentation">Documentation</a></li>   
-            <li><a href="./search">Search</a></li>
-            <li><a href="./files">Files</a></li>
-            <li><a href="./legal">Legal Issues</a></li>
+            <li class="uk-active"><a href="/">Home</a></li>
+            <li class="uk-active"><a href="documentation.html">Documentation</a></li>   
+            <li class="uk-active"><a href="files.html">Files</a></li>
+            <li class="uk-active"><a href="legal.html">Legal Issues</a></li>
         </ul>
     </nav>
+
 <section>
     <article>
-    <ul>
-        <li><a href="files/allen.html">Allen Modules</a></li>
-        
-    </ul>
-</article>
+        <input id="searchbar" onkeyup="search_blog()" type="text"
+name="search" placeholder="Search "></h2> <br><br> 
+<script>
+    // JavaScript code
+function search_blog() {
+let input = document.getElementById('searchbar').value
+input=input.toLowerCase();
+let x = document.getElementsByClassName('jeematerial');
+
+for (i = 0; i < x.length; i++) {
+if (!x[i].innerHTML.toLowerCase().includes(input)) {
+    x[i].style.display="none";
+}
+else {
+    x[i].style.display="list-item";				
+}
+}
+}
+</script>
+<ul id='list'>
+    <h3><a href="files/allen.html" ><li class="jeematerial">Allen Module</li></a></h3>  
+    <h3><a href="files/xyz.html" ><li class="jeematerial">Resonance</li></a></h3>
+    <h3><a href="files/xyz.html" ><li class="jeematerial">Lmao Ded</li></a></h3>
+    <h3><a href="files/xyz.html" ><li class="jeematerial">KOmedy King</li></a></h3>
+    <h3><a href="files/xyz.html" ><li class="jeematerial">lol</li></a></h3>
+    <h3><a href="files/xyz.html" ><li class="jeematerial">Cheems</li></a></h3>
+    <h3><a href="files/xyz.html" ><li class="jeematerial">Ye to dhoti khol raha hai</li></a></h3>
+</ul>
+    </article>
 </section>
 </body>
 </html>
