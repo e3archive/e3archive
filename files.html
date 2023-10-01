@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.6.0.min.css"/>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>JEE Archive</title>
+      <title>E&#179; Archive</title>
             <link rel="stylesheet" href="css/uikit.min.css" />
             <script src="js/uikit.min.js"></script>
             <script src="js/uikit-icons.min.js"></script>
@@ -28,7 +28,7 @@ name="search" placeholder="Search "></h2> <br><br>
 function search_blog() {
 let input = document.getElementById('searchbar').value
 input=input.toLowerCase();
-let x = document.getElementsByClassName('jeematerial');
+let x = document.getElementsByClassName('e3r');
 
 for (i = 0; i < x.length; i++) {
 if (!x[i].innerHTML.toLowerCase().includes(input)) {
@@ -41,14 +41,38 @@ else {
 }
 </script>
 <ul id='list'>
-    <h3><a href="files/allen.html" ><li class="jeematerial">Allen Module</li></a></h3>  
-    <h3><a href="files/xyz.html" ><li class="jeematerial">Resonance</li></a></h3>
-    <h3><a href="files/xyz.html" ><li class="jeematerial">Lmao Ded</li></a></h3>
-    <h3><a href="files/xyz.html" ><li class="jeematerial">KOmedy King</li></a></h3>
-    <h3><a href="files/xyz.html" ><li class="jeematerial">lol</li></a></h3>
-    <h3><a href="files/xyz.html" ><li class="jeematerial">Cheems</li></a></h3>
-    <h3><a href="files/xyz.html" ><li class="jeematerial">Ye to dhoti khol raha hai</li></a></h3>
+    <h3><a href="files/allen.html" ><li class="e3r">Allen Module</li></a></h3>  
+    <h3><a href="files/xyz.html" ><li class="e3r">Resonance</li></a></h3>
+    <h3><a href="files/xyz.html" ><li class="e3r">Lmao Ded</li></a></h3>
+    <h3><a href="files/xyz.html" ><li class="e3r">KOmedy King</li></a></h3>
+    <h3><a href="files/xyz.html" ><li class="e3r">lol</li></a></h3>
+    <h3><a href="files/xyz.html" ><li class="e3r">Cheems</li></a></h3>
+    <h3><a href="files/xyz.html" ><li class="e3r">Ye to dhoti khol raha hai</li></a></h3>
+<!--"More" feature-->
+<!--This feature will be added in future when there will be too many elements in this list.-->
+ <!--   <span id="dots"></span>
+    <span id="more">
+        <h3><a href="files/xyz.html" ><li class="e3r">KOmedy King</li></a></h3>
+    </span> -->
 </ul>
+<!-- <button onclick="myFunction()" id="myBtn">more...</button>
+<style>#more {display: none;}</style>
+<script>function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "more";
+      moreText.style.display = "inline";
+    }
+  } </script>
+--> 
     </article>
 </section>
 </body>
